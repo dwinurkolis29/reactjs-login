@@ -2,8 +2,6 @@
 import React from 'react';
 import { Bar, Pie } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
-import Navbar from '../components/Navbar';
-import Sidebar from '../components/Sidebar';
 
 Chart.register(...registerables);
 
