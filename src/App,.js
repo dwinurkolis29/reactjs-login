@@ -12,7 +12,7 @@ function App() {
 
   console.log("token : "+ token);
   if (!token) {
-    return <AuthLayout setToken={setToken} />;
+    return <Login setToken={setToken} />;
   }
   
     return (
