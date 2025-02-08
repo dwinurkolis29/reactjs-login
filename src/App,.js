@@ -7,6 +7,16 @@ import Admin from 'layouts/Admin';
 import Preferences from 'pages/Preferences';
 import Login from "pages/Login";
 
+function setToken(userToken) {
+  sessionStorage.setItem('token', JSON.stringify(userToken));
+}
+
+function getToken() {
+  const tokenString = sessionStorage.getItem('token');
+  const userToken = JSON.parse(tokenString);
+  return userToken?.token
+}
+
 function App() {
   const [token, setToken] = useState();
 
@@ -29,6 +39,7 @@ function App() {
 
                 //Preferences page
                 <Route path="/preferences" element={<Preferences/>} />
+                <Route path="preferences/" element={<Navigate to="/preferences/index" replace />} />
             </Routes>
           </BrowserRouter>
         </div>
