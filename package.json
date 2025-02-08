@@ -61,7 +61,9 @@
     "sass": "1.69.5"
   },
   "devDependencies": {
+    "cors": "^2.8.5",
     "cross-env": "^7.0.3",
+    "express": "^4.21.2",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.9"
   },
